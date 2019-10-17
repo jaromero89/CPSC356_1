@@ -1,4 +1,4 @@
-package com.linz.miky.cpsc356.util
+package com.linz.miky.ClickerApp.util
 
 import android.view.View
 
