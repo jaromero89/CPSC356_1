@@ -2,8 +2,8 @@ package com.linz.miky.cpsc356
 
 import android.content.Context
 import android.content.SharedPreferences
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.Transformations
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.Transformations
 import me.ibrahimsn.library.LiveSharedPreferences
 
 class CountRepository(context: Context) {

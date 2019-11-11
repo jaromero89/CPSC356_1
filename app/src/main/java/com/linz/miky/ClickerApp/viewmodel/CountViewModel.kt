@@ -1,7 +1,7 @@
 package com.linz.miky.ClickerApp.viewmodel
 
 import android.app.Application
-import android.arch.lifecycle.AndroidViewModel
+import androidx.lifecycle.AndroidViewModel
 import com.linz.miky.cpsc356.CountRepository
 
 

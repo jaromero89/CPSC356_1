@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.linz.miky.cpsc356">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -10,13 +13,21 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name="com.linz.miky.ClickerApp.MainActivity"/>
-        <activity android:name="com.linz.miky.ClickerApp.LoginActivity" >
+        <activity android:name="com.linz.miky.ClickerApp.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
+                <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
+    </activity>
+    <meta-data
+        android:name="com.google.android.gms.ads.com.linz.miky.cpsc356"
+        android:value="ca-app-pub-3940256099942544/6300978111"
+        />
+        <meta-data
+        android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+        android:value="true"/>
+
     </application>
 
 </manifest>
