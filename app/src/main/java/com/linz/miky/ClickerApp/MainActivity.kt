@@ -24,6 +24,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
+
 class MainActivity : AppCompatActivity() {
 
   private var weatherData: TextView? = null
@@ -38,6 +39,14 @@ class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
+
+    //buttonStart.setOnClickListener(View.OnClickListener {
+      ForegroundService.startService(this, "Foreground Service is running...")
+   // })
+   // buttonStop.setOnClickListener(View.OnClickListener {
+      //ForegroundService.stopService(this)
+    //})
+
     MobileAds.initialize(this) {}
     mAdView = findViewById(R.id.adView)
     val adRequest = AdRequest.Builder().build()
@@ -54,6 +63,7 @@ class MainActivity : AppCompatActivity() {
       countViewModel.setUserCount(getUsername(), babyCounter + 1) }
 
     }
+
 
   private fun updateCounter(count: Long) {
     babyCounter = count
